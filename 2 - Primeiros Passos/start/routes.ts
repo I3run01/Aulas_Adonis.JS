@@ -19,7 +19,11 @@
 */
 
 import Route from '@ioc:Adonis/Core/Route'
+import Env from '@ioc:Adonis/Core/Env' //Biblioteca para ativar o auto complete
 
 Route.get('/', async ({ view }) => {
   return view.render('welcome')
+
+  Env.get('EMAIL_USER')
+
 })

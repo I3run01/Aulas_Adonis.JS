@@ -3,3 +3,5 @@ Instações iniciais:
 		Adonis JS Goto View
 		Adonis JS Goto Controller
 		Edge Template support
+	No google Chrome extension:
+		JSON Viewer

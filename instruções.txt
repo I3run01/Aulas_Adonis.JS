@@ -1,0 +1,5 @@
+Instações iniciais:
+	No VS Code extensions, instalar:
+		Adonis JS Goto View
+		Adonis JS Goto Controller
+		Edge Template support

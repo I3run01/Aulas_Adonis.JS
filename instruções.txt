@@ -1,0 +1,34 @@
+Instações iniciais:
+	No VS Code extensions, instalar:
+		Adonis JS Goto View
+		Adonis JS Goto Controller
+		Edge Template support
+
+	No google Chrome extension:
+		JSON Viewer
+
+	Para baixar o AdonisJS
+		npm init adonis-ts-app@latest hello-world
+
+
+Comando para o Node ACE:
+
+	Para ver os comandos no node ace no terminal:
+		node ace
+
+	Para ver todas as suas rotas:
+		node ace list:routes
+
+	Para ver a versão do ace:
+		node ace -v
+
+Biblioteca autoComplete AdonisJS
+	import Env from '@ioc:Adonis/Core/Env'
+
+Observaçãoe sobre o Env.
+	Quando for colocar mais alguma variável no .Env, Tem que colocar no env.ts
+
+Estrutura MVC
+	Navegador -> Router(Adonis)
+			|
+		        

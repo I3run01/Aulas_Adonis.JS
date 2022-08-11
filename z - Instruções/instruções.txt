@@ -11,7 +11,7 @@ Instações iniciais:
 		npm init adonis-ts-app@latest hello-world
 
 
-Node ACE:
+Comando para o Node ACE:
 	Se você rodar o seguinte comando no terminal, poderá mexer ver suas variáveis:
 		node ace
 

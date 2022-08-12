@@ -6,5 +6,9 @@ export default class HomeController {
         return view.render('welcome')
     }
 
+    async sobre() {
+        return 'Sobre nós'
+    }
+
 
 }

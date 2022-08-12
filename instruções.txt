@@ -10,6 +10,12 @@ Instações iniciais:
 	Para baixar o AdonisJS
 		npm init adonis-ts-app@latest hello-world
 
+Biblioteca autoComplete AdonisJS
+	import Env from '@ioc:Adonis/Core/Env'
+
+Observaçãoe sobre o Env.
+	Quando for colocar mais alguma variável no .Env, Tem que colocar no env.ts
+
 
 Comando para o Node ACE:
 
@@ -22,13 +28,15 @@ Comando para o Node ACE:
 	Para ver a versão do ace:
 		node ace -v
 
-Biblioteca autoComplete AdonisJS
-	import Env from '@ioc:Adonis/Core/Env'
+Se for separar as rotas de view das de api
+	Na pasta 'start' você cria a seguinte para 
+		api.router.ts
+	Para poder acessar essas rotas, vai em:
+		adonissrc.json -> "preloads": coloque = "./start/api.routes"
 
-Observaçãoe sobre o Env.
-	Quando for colocar mais alguma variável no .Env, Tem que colocar no env.ts
 
-Estrutura MVC
-	Navegador -> Router(Adonis)
-			|
+
+
+***Para rodar o servidor:
+	npm run dev
 		        

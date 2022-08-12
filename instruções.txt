@@ -31,8 +31,13 @@ Comando para o Node ACE:
 Se for separar as rotas de view das de api
 	Na pasta 'start' você cria a seguinte para 
 		api.router.ts
-	Para poder acessar essas rotas, vai em:
-		adonissrc.json -> "preloads": coloque = "./start/api.routes"
+
+	OP 1.
+		Para poder acessar essas rotas, vai em:
+			adonissrc.json -> "preloads": coloque = "./start/api.routes"
+	OP 2.
+		Em start/routes.t:
+			import './api.routes'
 
 
 

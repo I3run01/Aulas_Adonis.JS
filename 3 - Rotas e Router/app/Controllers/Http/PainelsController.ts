@@ -34,6 +34,15 @@ export default class PainelsController {
         }
     }
 
+    async indexv( ) {
+       // let json = {hello: 'world'}
+
+        //status diz se deu certo ou não, depois envia o json
+        //response.status(201).send(json)
+
+        return {user: '2'}
+    }
+
     async usuarioByID({params}) {
         if ( !params['id']) {
             return {users: this.users}
@@ -66,6 +75,6 @@ export default class PainelsController {
     }
 
     async docs({params}) {
-        return params['*'][2]
+        return params['*'][2] //retorna o parametro de rota posição [2]
     }
 }

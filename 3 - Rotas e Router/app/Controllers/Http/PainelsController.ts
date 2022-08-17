@@ -34,13 +34,15 @@ export default class PainelsController {
         }
     }
 
-    async indexv( ) {
-       // let json = {hello: 'world'}
+    async indexv({response}) {
+       let json = {hello: 'world'}
 
         //status diz se deu certo ou não, depois envia o json
-        //response.status(201).send(json)
+        response.status(201).send(json)
+    }
 
-        return {user: '2'}
+    async redirectController({response}) {
+        response.redirect().toPath('/api/painels/usuario/2')
     }
 
     async usuarioByID({params}) {
@@ -72,6 +74,9 @@ export default class PainelsController {
 
     async Admin() {
         return {response: 'Rota admin'}
+    }
+
+        return {response: 'test'}
     }
 
     async docs({params}) {

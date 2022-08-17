@@ -1,12 +1,17 @@
 import Route from '@ioc:Adonis/Core/Route'
 
+//OBS -> Não deixar o mesmo nome na rota e no controller
+
 Route.group(() => {
-    Route.get('/admin/', 'PainelController.admin')
+
+    Route.get('/admin/', 'PainelsController.Admin')
 
     Route.group(()=> {
         Route.get('/', 'PainelsController.index')
 
-        Route.get('./indexv','PainelsController.indexv' )
+        Route.get('/response/', 'PainelsController.indexv')
+
+        Route.get('/redirect/', 'PainelsController.redirectController')
 
         Route.get('/usuario/:id?/', 'PainelsController.usuarioByID')
             .where('id', Route.matchers.number())//Vai aceitar só numeros
@@ -17,8 +22,8 @@ Route.group(() => {
 
         Route.get('/docs/*', 'PainelsController.docs')
 
-    }).prefix('/painels/')
-    
+    }).prefix('/painels')
+
 }).prefix('/api') //agora todas as rotas tem o prefixo api
 
 

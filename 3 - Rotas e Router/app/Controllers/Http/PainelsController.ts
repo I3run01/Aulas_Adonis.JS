@@ -76,6 +76,7 @@ export default class PainelsController {
         return {response: 'Rota admin'}
     }
 
+    async func() {
         return {response: 'test'}
     }
 

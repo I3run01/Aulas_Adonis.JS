@@ -2,8 +2,10 @@
 
 export default class HomeController {
 
+    //render
     async index({view}) {
-        return view.render('welcome')
+        //usa o ponto para renderizar um arquivo dentro de uma pasta
+        return view.render('painel/homepage')
     }
 
     async sobre() {

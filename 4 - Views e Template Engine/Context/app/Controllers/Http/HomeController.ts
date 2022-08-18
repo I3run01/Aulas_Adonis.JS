@@ -3,9 +3,9 @@ import type { HttpContextContract } from '@ioc:Adonis/Core/HttpContext'
 export default class HomeController {
 
 
-    async index(HttpContextContract) {
+    async index(ctx: HttpContextContract) {
 
-        return view.render('painel/homepage')
+        return ctx.view.render('painel/homepage')
     }
 
     async sobre() {

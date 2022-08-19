@@ -8,7 +8,7 @@ Instações iniciais:
 		JSON Viewer
 
 	Para baixar o AdonisJS
-		npm init adonis-ts-app@latest hello-world
+		npm init adonis-ts-app@latest 'nome do projeto'
 
 Biblioteca autoComplete AdonisJS
 	import Env from '@ioc:Adonis/Core/Env'
@@ -38,6 +38,20 @@ Se for separar as rotas de view das de api
 	OP 2.
 		Em start/routes.t:
 			import './api.routes'
+
+Para trabalhar com bancos de dados. Instale: 
+	npm i @adonisjs/lucid
+
+	Para configurar o banco de dados, digite o seguinte comando:
+		node ace invoke @adonisjs/lucid
+		
+		Selecione o bd. -> Copie para o Env as informações em:
+			Open the env.ts file and paste the following code inside the Env.rules object.
+			Variables for the MYSQL driver
+
+
+		OBS: use o 'espaço' para selecionar o banco e depois 'enter'
+		
 
 
 

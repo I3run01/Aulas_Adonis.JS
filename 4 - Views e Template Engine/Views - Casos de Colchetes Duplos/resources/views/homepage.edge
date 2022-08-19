@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Meu primeiro site com AdonisJS</title>
+</head>
+<body>
+    <code>
+        <!-- O "@" vai permitir que você coloque os {} no testo html -->
+        Para imprimir uma variável que vem do controller, você vai usar o código assim: @{váriaval}
+
+        <!-- Vai exeutar o alerta no html -->
+        {{{script}}} <br>
+
+        <!-- Podem renderizar variáveis do Controller-->
+        {{variaval}} <br>
+
+        <!-- Podem renderizar qualquer expressão javascript -->
+        {{2+1*3}} <br>
+
+        <!-- Podem renderizar funções assincronas e sincronas -->
+        {{ await getUser()}}
+    </code>
+</body> 
+</html>
